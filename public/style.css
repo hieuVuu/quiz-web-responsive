@@ -152,3 +152,108 @@ form {
 #end-game #btn-end button:hover {
        background-color: #2af35c;
 }
+/* Mobile: width < 740px */
+@media only screen and (max-width: 739px) {
+      h1 {    
+             font-size: 1.75rem;
+             margin: 2.5rem 4rem;  
+      }
+      .start-game {
+       position: absolute;
+       left: 0%;
+       top: 10%;
+       }
+      #btn-start {
+       top: 8rem;
+       position: absolute;
+       left: 30%;
+       width: 10rem;
+       height: 4rem;
+       font-size: 1.75rem;
+     
+      }
+      input {
+             font-size: 1.75rem;
+             top: 15rem;
+             left: 4.5rem;
+             padding: 0.5rem;
+             width: 13rem;
+      }
+      .container-quiz .header{
+             font-size: 2rem;
+      }
+      #score {
+             display: none;
+      }
+      #quiz-sport {
+       height: 40rem;
+       width: 22rem;
+      }
+      .container-quiz .form-question-wrapper #question {
+       font-size: 1.5rem;
+       margin: 1rem 1rem;
+       }
+      .container-quiz .form-question-wrapper {
+       height: 39rem;
+       width: 20rem;
+       font-size: 1.5rem;
+       left: 2rem;
+      }
+      label {
+       cursor: pointer;
+       font-size: 1.5rem;
+       display: grid;
+       width: 85%;
+       margin: 1rem;
+       }
+       label:hover {
+              width: 85%;
+              background-color: burlywood;
+              transition: 0.3s;
+       }
+       #status {
+              font-size: 1.5rem;
+              margin: 2rem;
+       }
+       .container-quiz .btn-redirect button {
+              padding: 0.75rem;
+              margin: 0 2rem ;
+              font-size: 1.2rem;
+       }
+       form { 
+              padding: 0;
+              font-size: 1.5rem;
+       }
+       #welcomeUser {
+              font-size: 1.5rem;
+              margin: 1rem;
+              width: 20rem;
+       }
+       .container-quiz .header {
+              display: block;
+              font-size: 1.2rem;
+              margin-left: 2rem;
+       }
+       #end-game{
+              display: none;
+              color: white;
+              position: absolute;
+              top: 12rem;
+              left:5rem;
+              font-size: 2rem;
+       }
+       #end-game #btn-end button {
+              padding: 2rem;
+              font-size: 2rem;
+              margin: 2rem;
+       }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+       body {
+              display: none;
+       }
+}
+/* PC: width >= 1024px */
+@media only screen and (min-width: 1024px) {
+}
