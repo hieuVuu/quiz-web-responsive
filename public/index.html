@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Quiz app</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nerko+One&family=Short+Stack&family=Walter+Turncoat&display=swap" rel="stylesheet">
+</head>
+<body>
+       <div class="start-game" id="welcome-quiz">
+              <h1>Welcome Sport Quiz</h1>
+              <input type="text" id="username" placeholder="Input your name">
+              <button id="btn-start" onclick="startgame()">Start Quiz</button>
+       </div>
+
+       <div id="quiz-sport">
+              <div class="container-quiz">
+                     <div class="header">
+                            <div id="welcomeUser"></div>
+                            <div id="score">
+                                   score: 0
+                            </div>
+                            <!-- <div class="time">
+                                   22:00
+                            </div> -->
+                     </div>
+                     <div class="form-question-wrapper">
+                            <form id="question-form" action="">
+                                   <div id="question"></div>
+                                   <div class="list-answer">
+                                          <div class="answer-wrapper">
+                                                 <label onclick="checkAnswer(this)" class="answer"></label>
+                                          </div>
+              
+                                          <div class="answer-wrapper">
+                                                 <label onclick="checkAnswer(this)" class="answer"></label>
+                                          </div>
+              
+                                          <div class="answer-wrapper">
+                                                 <label onclick="checkAnswer(this)" class="answer"></label>
+                                          </div>
+              
+                                          <div class="answer-wrapper">
+                                                 <label onclick="checkAnswer(this)" class="answer"></label>
+                                          </div>
+                                   </div>
+                            </form>
+                            <div class="btn-redirect">
+                                   <div id="btn-next">
+                                          <button>Next</button>
+                                   </div>
+                                   <div id="btn-restart">
+                                          <button>Restart</button>
+                                   </div>
+                            </div>
+                            <div id="status"></div>
+                     </div>
+              </div>
+       </div>
+       <div id="end-game">
+              <div id="status-end">hello</div>
+              <div id="btn-end">
+                     <button>Restart</button>
+              </div>
+       </div>
+                     <!-- The core Firebase JS SDK is always required and must be listed first -->
+       <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+       <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+       <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+       <script>
+       // Your web app's Firebase configuration
+       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+       var firebaseConfig = {
+       apiKey: "AIzaSyCrSHxzlRqUI1IsV-SDCctheW3U-zo9Bf8",
+       authDomain: "quiz-web-717ff.firebaseapp.com",
+       databaseURL: "https://quiz-web-717ff.firebaseio.com",
+       projectId: "quiz-web-717ff",
+       storageBucket: "quiz-web-717ff.appspot.com",
+       messagingSenderId: "223932587140",
+       appId: "1:223932587140:web:cc824253a42a9a361476d1",
+       measurementId: "G-J5GQH7ZBL9"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       firebase.analytics();
+       </script>
+              <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+              <script src="min.js"></script>
+</body>
+</html>

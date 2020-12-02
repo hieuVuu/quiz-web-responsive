@@ -1,0 +1,154 @@
+body {
+       margin: 0;
+       padding: 0;
+       background-color: rgb(75, 71, 71);  
+       position: relative;   
+       font-family: 'Nerko One', cursive;
+}
+input {
+       outline: none;
+       padding: 1rem;
+       border-radius: 1rem;
+       border: 3px solid #f5aa33;
+       font-size: 2rem;
+       font-family: 'Nerko One', cursive;
+       position: absolute;
+       top: 22rem;
+       left: 6.5rem;
+       
+}
+button {
+       cursor: pointer;
+       transition: 0.3s;
+}
+h1 {
+       color: #f5aa33;
+       font-size: 5rem;
+}
+.start-game {
+       position: absolute;
+       left: 27%;
+       top: 50%;
+}
+#btn-start {
+       font-family: 'Nerko One', cursive;
+       position: absolute;
+       left: 30%;
+       background-color: #f5aa33;
+       padding: 1rem 1rem;
+       width: 12rem;
+       height: 5rem;
+       font-size: 2rem;
+       outline: none;
+       border-radius: 1rem;
+       transition: 0.2s;
+       border: 2px solid white;
+       color: white;
+}
+#btn-start:hover {
+       background-color: #2af35c;
+}
+#quiz-sport {
+       height: 100vh;
+       width: 100vw;
+       color: white;
+       display: none;
+}
+#status {
+       margin: 2rem 4rem;
+       font-size: 2rem;
+}
+.container-quiz {
+       position: relative;
+}
+.container-quiz .header {
+       font-size: 4rem;
+       justify-content: center;
+       display: flex;    
+}
+.container-quiz .header #score {
+       position: fixed;
+       right: 3rem;
+       top: 10rem;
+       background-color: rgb(241, 163, 60);
+       width: 6rem;
+       height: 8rem;
+       font-size: 2rem;
+}
+.container-quiz .form-question-wrapper {
+       position: absolute;
+       left: 10%;
+       margin-top: 2rem;
+       background-color: rgb(240, 176, 38);
+       width: 65rem;
+       height: 35rem;
+       border-radius: 0.5rem;
+}
+.container-quiz .form-question-wrapper #question {
+       font-size: 2rem;
+       margin: 1rem 3rem;
+}
+.answer-wrapper {
+       margin-bottom: 1.5rem;
+}
+label {
+       padding: 0.5rem;
+       margin: 3rem;
+       cursor: pointer;
+       font-size: 2rem;
+}
+.correct {
+       background-color: #2af35c;
+}
+.checked {
+       background-color: burlywood;
+}
+label:hover {
+       width: max-content;
+       background-color: burlywood;
+       transition: 0.3s;
+}
+.container-quiz .btn-redirect {
+       display: flex;
+       justify-content: space-between;
+}
+.container-quiz .btn-redirect button {
+       padding: 1rem;
+       margin: 0 4rem;
+       border-radius: 0.5rem;
+       font-family: 'Nerko One', cursive;
+       outline: none;
+       font-size: 1.5rem;
+       background-color: rgb(241, 163, 60);
+       color: white;
+       border: 2px solid white;
+}
+.container-quiz .btn-redirect button:hover {
+       transition: 0.3s;
+       background-color: #2af35c;
+}
+form {
+       padding: 1rem;
+}
+#end-game{
+       display: none;
+       color: white;
+       position: absolute;
+       top: 10rem;
+       left: 30rem;
+       font-size: 3rem;
+}
+#end-game #btn-end button {
+       padding: 2rem;
+       font-size: 2rem;
+       border-radius: 1rem;
+       background-color: #f5aa33;
+       border: 2px solid white;
+       color: white;
+       font-family: 'Nerko One', cursive;
+       margin: 2rem;
+       outline: none;
+}
+#end-game #btn-end button:hover {
+       background-color: #2af35c;
+}
