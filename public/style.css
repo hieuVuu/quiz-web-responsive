@@ -17,6 +17,14 @@ input {
        left: 6.5rem;
        
 }
+p {
+       margin-left: 2rem;
+}
+.timer {
+       display: flex;
+       margin-left: 3rem;
+       height: 1rem;
+}
 button {
        cursor: pointer;
        transition: 0.3s;

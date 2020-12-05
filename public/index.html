@@ -9,10 +9,11 @@
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link rel="preconnect" href="https://fonts.gstatic.com">
        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nerko+One&family=Short+Stack&family=Walter+Turncoat&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 </head>
 <body>
        <div class="start-game" id="welcome-quiz">
-              <h1>Welcome Sport Quiz</h1>
+              <h1>General Knowledge</h1>
               <input type="text" id="username" placeholder="Input your name">
               <button id="btn-start" onclick="startgame()">Start Quiz</button>
        </div>
@@ -29,6 +30,10 @@
                             </div> -->
                      </div>
                      <div class="form-question-wrapper">
+                            <div class="timer">  
+                                   <i class="far fa-clock"></i>
+                                   <p id="countdown"></p>
+                            </div>
                             <form id="question-form" action="">
                                    <div id="question"></div>
                                    <div class="list-answer">
@@ -62,7 +67,7 @@
               </div>
        </div>
        <div id="end-game">
-              <div id="status-end">hello</div>
+              <div id="status-end"></div>
               <div id="btn-end">
                      <button>Restart</button>
               </div>

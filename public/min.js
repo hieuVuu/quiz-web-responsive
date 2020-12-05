@@ -2,14 +2,26 @@ function startgame () {
        const usernameElem = document.getElementById('username')
        const hideElem = document.getElementById('welcome-quiz')
        hideElem.style.display ='none'
-       document.getElementById('welcomeUser').innerHTML = "Welcome"+' '+`${usernameElem.value}`
+       document.getElementById('welcomeUser').innerHTML = "Hello"+' '+`${usernameElem.value}`
        document.getElementById('quiz-sport').style.display ='block'
        getData()
 }
+       // let time = 5;
+       // const countdownEl = document.getElementById('countdown')
+       // const statusTimeOut = document.getElementById('status-time')
+       // function updateCountdown() {
+       // const minute = Math.floor(time/60);
+       // let seconds = time%60;
+       // countdownEl.innerHTML = `${minute}` +' : '+ `${seconds}`;
+       // time--;
+       // }
+       // setInterval(updateCountdown, 1000);
+
 async function getData() {
-       const res = await axios.get('https://opentdb.com/api.php?amount=5&category=21&difficulty=easy&type=multiple')
+       const res = await axios.get('https://opentdb.com/api.php?amount=15&category=9&difficulty=easy&type=multiple')
        const data = res.data.results
        showNextQuestion(data) 
+
 }
 function showQuiz (data) {
        document.getElementById('question').innerText = data[data.length-1].question
@@ -48,9 +60,9 @@ function showNextQuestion(data) {
 }
 function checkAnswer(answer) {
        if(answer.id ==='correct-answer'){
+              document.getElementById('correct-answer').classList.add('correct')
               document.getElementById('status').innerText = 'Amazing, Good Job :)'
               addScore()
-              document.getElementById('correct-answer').classList.add('correct')
        }   
        else{  
               document.getElementById('status').innerText = 'ops, incorrect answer :)'
